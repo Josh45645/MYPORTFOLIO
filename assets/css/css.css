@@ -1,0 +1,78 @@
+.hi{
+margin-top: ;
+}
+
+@media only screen and (max-width: 480px) {
+    .hi {
+      margin-top: 10px; /* Adjust as needed */
+    }
+  }
+  
+  /* For devices between 481 and 768 pixels */
+  @media only screen and (min-width: 481px) and (max-width: 768px) {
+    .hi {
+      margin-top: 20px; /* Adjust as needed */
+    }
+  }
+  
+  /* For devices between 769 and 1024 pixels */
+  @media only screen and (min-width: 769px) and (max-width: 1024px) {
+    .hi {
+      margin-top: 30px; /* Adjust as needed */
+    }
+  }
+  
+  /* For devices with over 1024 pixels */
+  @media only screen and (min-width: 1025px) {
+    .hi {
+      margin-top: 40px; /* Adjust as needed */
+    }
+  }
+
+  @media only screen and (max-width: 960px) {
+    .hi {
+      margin-top: 45%; /* Adjust as needed */
+    }
+  }
+
+  .zoom-hover {
+    transition: transform 0.5s ease; /* Smooth transition effect */
+  }
+  
+  .zoom-hover:hover {
+    transform: scale(1.1); /* Scale up the image on hover */
+  }
+
+  .image-link2 {
+    position: relative;
+    display: inline-block; /* Ensures that the link container fits its content */
+  }
+  
+  .zoom-hover2 {
+    transition: transform 0.3s ease, filter 0.3s ease; /* Smooth transition effect */
+  }
+  
+  .zoom-hover2:hover {
+    transform: scale(1.1); /* Scale up the image on hover */
+    filter: blur(5px); /* Apply blur effect on hover */
+  }
+  
+  .overlay {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: white;
+    font-size: 24px;
+    font-weight: bold;
+    text-align: center;
+    background-color: rgba(0, 0, 0, 0.5); /* Semi-transparent background */
+    padding: 15px 30px; 
+    opacity: 0; /* Initially hidden */
+    transition: opacity 0.3s ease; /* Smooth transition effect */
+  }
+  
+  .image-link:hover .overlay {
+    opacity: 1; /* Show overlay on hover */
+  }
+  
